@@ -24,6 +24,10 @@ Please give a 🌟 Star if you like this project!
 
 ## Recent updates
 
+25/4/27
+
+- Added: URL Parameters Auto-fill Configuration Guide
+
 25/04/06
 
 - Added: Use Google PSE for web search
