@@ -132,6 +132,20 @@ Make sure to install dependencies:
 pnpm install
 ```
 
+## Feature Guide
+
+### URL Parameter Auto-fill Configuration
+
+The application now supports auto-filling configuration information through URL parameters. Users can open the application via a specific link and automatically fill in model names, API keys, API Base URLs, and other configuration information without manual input.
+
+#### Basic Example
+
+```
+https://your-deep-research-domain.com/?aiProvider=openai-compatible&aiModel=gpt-4&aiApiKey=your-api-key&showConfig=true
+```
+
+For detailed instructions, please refer to the [URL Parameters Guide](./docs/url-params-guide-en.md).
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`:

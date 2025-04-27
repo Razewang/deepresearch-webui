@@ -129,6 +129,20 @@ docker run -p 3000:3000 --name deep-research-web -d deep-research-web
 pnpm install
 ```
 
+## 功能指南
+
+### URL参数自动填充配置
+
+现在支持通过URL参数自动填充配置信息。用户可以通过特定链接打开应用并自动填充模型名称、API密钥、API Base URL等配置信息，无需手动输入。
+
+#### 基本示例
+
+```
+https://your-deep-research-domain.com/?aiProvider=openai-compatible&aiModel=gpt-4&aiApiKey=your-api-key&showConfig=true
+```
+
+详细说明请参阅 [URL参数指南](./docs/url-params-guide.md)。
+
 ### 开发模式
 
 启动本地开发服务器（访问 http://localhost:3000）：

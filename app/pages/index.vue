@@ -59,6 +59,7 @@
   import type { ResearchInputData } from '@/components/ResearchForm.vue'
   import type { ResearchFeedbackResult } from '@/components/ResearchFeedback.vue'
   import type { ResearchResult } from '~~/lib/deep-research'
+  import { parseConfigFromUrlParams } from '@/utils/url-params'
   import {
     feedbackInjectionKey,
     formInjectionKey,
@@ -99,4 +100,12 @@
   async function generateReport() {
     reportRef.value?.generateReport()
   }
+  
+  // 在页面加载时解析URL参数并自动填充配置
+  onMounted(() => {
+    const shouldShowConfig = parseConfigFromUrlParams()
+    if (shouldShowConfig) {
+      configManagerRef.value?.show()
+    }
+  })
 </script>
